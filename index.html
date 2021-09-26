@@ -7,34 +7,42 @@
     <meta name="author" content="mrthoAbby">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <title>LA RULETA BIBLICA</title>
 </head>
 
 <body>
-    <header>
-        <h1 class="main-tittle">LA RUEDA DE LA FORTUNA BIBLICA</h1>
-        <li>
-            <ul class="menu-options">Iniciar a jugar</ul>
-            <ul class="menu-options">Contactar al desarrollador</ul>
-        </li>
-    </header>
-    <section class="players-selector">
-        <h2>Cantidad de jugadores</h2>
-        <input type="range" min="2" max="10" step="1" value="4">
-    </section>
-    <section class="name-players">
-        <!-- Aquí va html generado por javascript -->
-    </section>
-    <section class="board-game">
-        <main class="enviroment-game"></main>
-        <aside class="content-ruleta">
+    <main class="content">
+        <header class="main-tittle container-section">
+            <blockquote class="info-title">Divierte y aprende jugando a la ruleta biblica con tú familia o amigos,
+                pueden haber hasta diez
+                jugadores. ¡Qué esperas? Empieza a jugar y averigua que tan bueno eres y quién sabe más sobre la biblia
+            </blockquote>
+            <aside class="options">
+                <h1 class="text-tittle">La Ruleta Biblica</h1>
+                <h2 class="menu-options">Cantidad de jugadores <span>#</span></h2>
+                <input class="menu-options" type="range" min="2" max="10" step="1" value="4">
+                <input type="button" class="menu-options" value="Comenzar a jugar" />
+                <input type="button" value="Contactar al desarrollador" class="menu-options" />
+            </aside>
+        </header>
+        <section class="players-selector container-section">
 
-        </aside>
-        <!-- Aquí va html generado por javascript -->
-    </section>
-    <section class="player-winners">
-        <!-- Aquí va html generado por javascript -->
-    </section>
+        </section>
+        <section class="name-players container-section">
+            <!-- Aquí va html generado por javascript -->
+        </section>
+        <section class="board-game container-section">
+            <main class="enviroment-game"></main>
+            <aside class="content-ruleta">
+
+            </aside>
+            <!-- Aquí va html generado por javascript -->
+        </section>
+        <section class="player-winners container-section">
+            <!-- Aquí va html generado por javascript -->
+        </section>
+    </main>
 </body>
 
 </html>
