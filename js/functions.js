@@ -7,7 +7,7 @@ var letterStore = document.getElementById('letter-store');
 var vocalStore = document.getElementById('vocal-store');
 var ruleta = document.getElementById('idruleta');
 var contentIteraction = document.getElementById('conten-interaction');
-
+var buttonRuleta = document.getElementById('btnGiro');
 
 
 
@@ -47,10 +47,7 @@ const valoresDemos = [
 "Pierde el turno",
 -30000
 ]
-
-
-
-
+var anguleBySectionRuleta = 360/valoresDemos.length;
 
 
 
@@ -196,41 +193,150 @@ function storeGenerator(){
         }
     }
 }
-// Private functions
-function colorSet(){
-    let digitAleatori = ['f',3,4,5,6,7,8,9];
-    let color = '';
-    let i = 0;
-    while(i<6){
-        let pos=Math.round(Math.random()*digitAleatori.length-1);
-        color = color+''+digitAleatori[pos];
-        i++;
+
+     
+function gireToRuleta(){
+   
+     var date = new Date(). getTime();
+     var dateMore = date +5000;
+     var aleatory = getRandomArbitrary(1, 13);
+
+     var inicio = 0;
+     var frequency = getRandomArbitrary(1, 5);
+     var id = setInterval(frame,frequency);
+     function frame(){
+         var increment = aleatory;
+         if(new Date(). getTime() > dateMore){
+             clearInterval(id);
+         }
+         else{
+             inicio += increment;
+             if(increment > 5){
+                 increment--;
+             }
+             if(inicio >= 360){
+                 inicio = 0;
+             }
+
+
+
+
+
+
+             
+
+
+             ruleta.style.transform = `rotate(${inicio}deg)`;
+         }
+     }
+    
+     if(inicio >= 1 || inicio < 7){
+        console.log(3000);
     }
-    return '#'+color;
+    else if(inicio >= 7 || inicio < 7+anguleBySectionRuleta){
+        console.log(85.000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*2){
+        console.log(30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*3){
+        console.log(-1500);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*4){
+        console.log("Donar");
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*5){
+        console.log(25000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*6){
+        console.log(30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*7){
+        console.log(10000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*8){
+        console.log(100000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*10){
+        console.log(-50000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*11){
+        console.log(30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*12){
+        console.log(25000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*13){
+        console.log(80000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*14){
+        console.log(10000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*15){
+        console.log(30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*16){
+        console.log(50000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*17){
+        console.log(100000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*18){
+        console.log("Donar");
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*19){
+        console.log(30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*20){
+        console.log(10000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*21){
+        console.log(-30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*22){
+        console.log("Pierde");
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*23){
+        console.log(25000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*24){
+        console.log(10000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*25){
+        console.log(30000);
+    }
+    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*26){
+        console.log(75000);
+    }
+
+    // ruleta.style.transform = `rotate(${7+anguleBySectionRuleta*2}deg)`;
+
 }
 
-function panelGamestart(){
-    for (const key in buttonsDemos) {
-        let button = document.createElement("INPUT");
-            button.setAttribute('id',key);
-            button.setAttribute('value',buttonsDemos[key])
-            button.setAttribute('class',"menu-options")
-            button.setAttribute('type',"button")
-            contentIteraction.appendChild(button);
-    }
-}
-        
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
 function startGame(){
     showPlayers();
     generateSquare();
     storeGenerator();
     createRuleta();
-    panelGamestart();
     
 }
+
+function pausecomp(millis)
+{
+    var date = new Date();
+    var curDate = null;
+    do { curDate = new Date(); }
+    while(curDate-date < millis);
+}
+
 
 //Events
 numberPlayers.addEventListener('change',assignNumber);
 // window.addEventListener('load',assignNumber);
 // window.addEventListener('load',createPlayers);
 window.addEventListener('load',startGame);
+buttonRuleta.addEventListener('click',gireToRuleta)
