@@ -208,6 +208,89 @@ function gireToRuleta(){
          var increment = aleatory;
          if(new Date(). getTime() > dateMore){
              clearInterval(id);
+             console.log("Uno",7+anguleBySectionRuleta*25);
+             console.log("Dos",7+anguleBySectionRuleta*26);
+             if(inicio >= 1 && inicio < 7){
+                 console.log(3000);
+            }
+            else if((inicio >= 7 && inicio < 7+anguleBySectionRuleta) ){
+                console.log(85000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta && inicio < 7+anguleBySectionRuleta*2){
+                console.log(30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*2 && inicio < 7+anguleBySectionRuleta*3){
+                console.log(-1500);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*3 && inicio < 7+anguleBySectionRuleta*4){
+                console.log("Donar");
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*4 && inicio < 7+anguleBySectionRuleta*5){
+                console.log(25000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*5 && inicio < 7+anguleBySectionRuleta*6){
+                console.log(30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*6 && inicio < 7+anguleBySectionRuleta*7){
+                console.log(10000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*7 && inicio < 7+anguleBySectionRuleta*8){
+                console.log(100000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*8 && inicio < 7+anguleBySectionRuleta*9){
+                console.log(-50000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*9 && inicio < 7+anguleBySectionRuleta*10){
+                console.log(30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*10 && inicio < 7+anguleBySectionRuleta*11){
+                console.log(25000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*11 && inicio < 7+anguleBySectionRuleta*12){
+                console.log(80000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*12 && inicio < 7+anguleBySectionRuleta*13){
+                console.log(10000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*13 && inicio < 7+anguleBySectionRuleta*14){
+                console.log(30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*14 && inicio < 7+anguleBySectionRuleta*15){
+                console.log(50000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*15 && inicio < 7+anguleBySectionRuleta*16){
+                console.log(100000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*16 && inicio < 7+anguleBySectionRuleta*17){
+                console.log("Donar");
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*17 && inicio < 7+anguleBySectionRuleta*18){
+                console.log(30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*18 && inicio < 7+anguleBySectionRuleta*19){
+                console.log(10000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*19 && inicio < 7+anguleBySectionRuleta*20){
+                console.log(-30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*20 && inicio < 7+anguleBySectionRuleta*21){
+                console.log("Pierde");
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*21 && inicio < 7+anguleBySectionRuleta*22){
+                console.log(25000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*22 && inicio < 7+anguleBySectionRuleta*23){
+                console.log(10000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*23 && inicio < 7+anguleBySectionRuleta*24){
+                console.log(30000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*24 && inicio < 7+anguleBySectionRuleta*25){
+                console.log(75000);
+            }
+            else if(inicio >= 7+anguleBySectionRuleta*25 && inicio < 361){
+               console.log(3000);
+           }
          }
          else{
              inicio += increment;
@@ -217,97 +300,13 @@ function gireToRuleta(){
              if(inicio >= 360){
                  inicio = 0;
              }
-
-
-
-
-
-
-             
-
-
              ruleta.style.transform = `rotate(${inicio}deg)`;
-         }
-     }
+             
+             
+            }
+        }
     
-     if(inicio >= 1 || inicio < 7){
-        console.log(3000);
-    }
-    else if(inicio >= 7 || inicio < 7+anguleBySectionRuleta){
-        console.log(85.000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*2){
-        console.log(30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*3){
-        console.log(-1500);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*4){
-        console.log("Donar");
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*5){
-        console.log(25000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*6){
-        console.log(30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*7){
-        console.log(10000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*8){
-        console.log(100000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*10){
-        console.log(-50000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*11){
-        console.log(30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*12){
-        console.log(25000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*13){
-        console.log(80000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*14){
-        console.log(10000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*15){
-        console.log(30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*16){
-        console.log(50000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*17){
-        console.log(100000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*18){
-        console.log("Donar");
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*19){
-        console.log(30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*20){
-        console.log(10000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*21){
-        console.log(-30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*22){
-        console.log("Pierde");
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*23){
-        console.log(25000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*24){
-        console.log(10000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*25){
-        console.log(30000);
-    }
-    else if(inicio >= 7+anguleBySectionRuleta || inicio < 7+anguleBySectionRuleta*26){
-        console.log(75000);
-    }
+    
 
     // ruleta.style.transform = `rotate(${7+anguleBySectionRuleta*2}deg)`;
 
