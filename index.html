@@ -23,15 +23,15 @@
                 <h2 class="menu-options">Jugadores: <span id="number-players">#</span></h2>
                 <input class="menu-options" type="range" id="numberPlayers" min="2" max="10" step="1" value="4">
                 <input type="button" class="menu-options" value="Comenzar a jugar" />
-                <input type="button" class="menu-options" value="Contactar al desarrollador"/>
+                <input type="button" class="menu-options" value="Contactar al desarrollador" />
             </aside>
         </header>
         <section id="playersSelector" class="players-selector container-section">
-        <h3 class="title-players">Por favor ingresa los nombres de los jugadores</h3>
+            <h3 class="title-players">Por favor ingresa los nombres de los jugadores</h3>
         </section>
         <section class="board-game container-section">
             <section id="name-players" class="name-players">
-                
+
             </section>
             <main class="enviroment-game">
                 <div class="bola positionA"></div>
@@ -41,8 +41,23 @@
                 <section id="action-game" class="action-game">
 
                 </section>
+                <section id="store" class="store">
+                    <section class="info-store">
+                        <div id="info-alert"></div>
+                        <span id="info-span">Les damos la bienvenida a la tienda de compras por favor selecióna una letra a comprar</span>
+                    </section>
+                    <section id="buy-store" class="buy-store">
+                        <section id="letter-store"></section>
+                        <section id="vocal-store" class="vocal-store"></section>
+                    </section>
+                </section>
                 <aside class="content-ruleta">
-    
+                    <div class="selector-value">
+
+                    </div>
+                    <canvas width="600" height="600" id="idruleta"></canvas>
+                </aside>
+                <aside id="conten-interaction" class="conten-interaction">
                 </aside>
             </main>
             <!-- Aquí va html generado por javascript -->
@@ -53,4 +68,5 @@
     </main>
 </body>
 <script src="/js/functions.js"></script>
- </html>
+
+</html>
