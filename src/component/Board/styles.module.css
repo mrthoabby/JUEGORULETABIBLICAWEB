@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    /* width: 70%; */
+    /* height: 245px; */
+    background-color: rgba(0, 255, 255, 0.188);
+    /* bottom: 0; */
+    border: #244755 ridge 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* left: 0; */
+    box-shadow: 28px 22px 12px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    border-bottom: #244755 ridge 6px;
+    background-color: #244755;
+    padding: 0.1px 15px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.animation {
+    position: relative;
+    animation-name: text-info;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes text-info {
+    0% {
+        left: 90%;
+    }
+
+    100% {
+        left: -10%;
+    }
+}
