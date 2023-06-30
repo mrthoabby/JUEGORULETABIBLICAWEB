@@ -1,0 +1,44 @@
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 15px;
+}
+
+.logo {
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid rgb(142, 141, 141);
+}
+
+.field {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.tittle {
+    padding: 0px 4px;
+}
+
+.textContainer {
+    display: flex;
+    column-gap: 5px;
+    row-gap: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.active {
+    background-color: rgba(0, 255, 55, 0.415);
+    height: 100%;
+}
