@@ -1,15 +1,16 @@
 .container {
     position: absolute;
-    background-color: rgba(0, 255, 255, 0.188);
-    border: #244755 ridge 6px;
+    background-color: var(--semi-transparent-colo);
+    border: var(--aside-primary-color) ridge 6px;
+    box-sizing: border-box;
     overflow: hidden;
     box-sizing: border-box;
     box-shadow: 28px 22px 12px 2px rgba(0, 0, 0, 0.5);
 }
 
 .header {
-    border-bottom: #244755 ridge 6px;
-    background-color: #244755;
+    border-bottom: var(--aside-primary-color) ridge 6px;
+    background-color: var(--aside-primary-color);
     padding: 0.1px 15px;
     color: white;
     font-weight: 600;
