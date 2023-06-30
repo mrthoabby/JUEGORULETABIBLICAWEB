@@ -1,24 +1,27 @@
-import logo from "../../assets/players/badge.jpg";
+import logo from "../../assets/images/badge.jpg";
 import styles from "./styles.module.css";
 type ActivePlayerProps = {
     inTurn?: boolean;
+    name: string;
+    turns: number;
+    money: number;
 };
-export const ActivePlayer = ({ inTurn }: ActivePlayerProps) => {
+export const ActivePlayer = ({ inTurn, name, turns, money }: ActivePlayerProps) => {
     return (
         <section className={`${styles.container} ${inTurn ? styles.active : ""}`}>
             <img src={logo} className={styles.logo} alt="logo" />
             <aside className={styles.textContainer}>
                 <span className={styles.field}>
                     <b className={styles.tittle}>Nombre:</b>
-                    <p>Nombre jugador</p>
+                    <p>{name}</p>
                 </span>
                 <span className={styles.field}>
                     <b className={styles.tittle}>Giros:</b>
-                    <p>0</p>
+                    <p>{turns}</p>
                 </span>
                 <span className={styles.field}>
                     <b className={styles.tittle}>Dinero:</b>
-                    <p>$ 0</p>
+                    <p>{money.toLocaleString("es-CO", { style: "currency", currency: "CO" })}</p>
                 </span>
                 {inTurn && <i>En turno</i>}
             </aside>
