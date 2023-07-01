@@ -12,8 +12,8 @@ export const ActivePlayer = ({ inTurn, name, turns, money }: ActivePlayerProps) 
             <img src={logo} className={styles.logo} alt="logo" />
             <aside className={styles.textContainer}>
                 <span className={styles.field}>
-                    <b className={styles.tittle}>Nombre:</b>
-                    <p>{name}</p>
+                    <b className={styles.tittle}>Nombre de usuario :</b>
+                    <p>@{name}</p>
                 </span>
                 <span className={styles.field}>
                     <b className={styles.tittle}>Giros:</b>
@@ -21,7 +21,10 @@ export const ActivePlayer = ({ inTurn, name, turns, money }: ActivePlayerProps) 
                 </span>
                 <span className={styles.field}>
                     <b className={styles.tittle}>Dinero:</b>
-                    <p>{money.toLocaleString("es-CO", { style: "currency", currency: "CO" })}</p>
+                    <p>{money.toLocaleString('es-CO', {
+                        style: 'currency',
+                        currency: 'COP',
+                    })}</p>
                 </span>
                 {inTurn && <i>En turno</i>}
             </aside>
