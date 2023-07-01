@@ -15,7 +15,7 @@ export const Info = ({ infoAction, description, date, player }: InfoProps) => {
                     {infoAction}:
                 </b>
                 <i>{description}</i>
-                <small>{`[@${player}]`}</small>
+                {player && <small>{`[@${player}]`}</small>}
             </span>
         </section>
     );
