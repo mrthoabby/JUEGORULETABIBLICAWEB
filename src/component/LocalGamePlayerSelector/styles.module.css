@@ -1,0 +1,26 @@
+.player {
+    margin-top: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.players {
+    color: white;
+    text-shadow: 2px 2px 3px gray;
+    font-size: 1.2rem;
+}
+
+.playersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
