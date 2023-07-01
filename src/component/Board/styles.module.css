@@ -1,6 +1,6 @@
 .container {
     position: absolute;
-    background-color: var(--semi-transparent-colo);
+    background-color: var(--semi-transparent-color);
     border: var(--aside-primary-color) ridge 6px;
     box-sizing: border-box;
     overflow: hidden;
