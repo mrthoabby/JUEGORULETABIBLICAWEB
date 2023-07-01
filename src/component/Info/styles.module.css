@@ -4,6 +4,8 @@
 }
 
 .info {
+    display: flex;
+    column-gap: 2px;
     margin-top: 10px;
     margin-left: 5px;
     background-color: rgb(255, 255, 255);
