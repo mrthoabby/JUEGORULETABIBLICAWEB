@@ -1,0 +1,60 @@
+.gameType {
+    display: flex;
+    row-gap: 5px;
+    user-select: none;
+    margin: 5px;
+    background-color: var(--semi-transparent-color);
+    padding: 8px;
+    flex-direction: column;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 2px 5px 8px black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.badge {
+    border: 10px var(--primary-color-hover) inset;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.gameName {
+    color: white;
+    font-weight: 900;
+    margin: 8px;
+    letter-spacing: 1.5px;
+}
+
+.gameDescription {
+    border: 1px inset white;
+    color: white;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.gameInfo {
+    display: flex;
+    align-items: center;
+}
+
+.gameType:hover {
+    background-color: var(--aside-primary-color);
+}
+
+.active {
+    background-color: var(--aside-primary-color-hover);
+}
