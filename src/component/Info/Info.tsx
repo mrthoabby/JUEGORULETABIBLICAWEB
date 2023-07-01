@@ -2,14 +2,14 @@ import styles from "./styles.module.css";
 type InfoProps = {
     infoAction: string;
     description?: string;
-    date: Date;
+    date: string;
     player?: string;
 };
 
 export const Info = ({ infoAction, description, date, player }: InfoProps) => {
     return (
         <section className={styles.container}>
-            <span className={styles.date}>{date.toLocaleDateString(undefined, { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</span>
+            <span className={styles.date}>{date}</span>
             <span className={styles.info}>
                 <b>
                     {infoAction}:
